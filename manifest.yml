@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 1024M
+  instances: 2
+  domain: mybluemix.net
+  name: mttf
+  host: mttf
+  disk_quota: 1024M
+  services:
+  - MongoLab-TT
+  - Presence Insights-hz
+  env:
+    NODE_ENV: bluemix
